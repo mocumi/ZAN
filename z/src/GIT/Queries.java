@@ -37,7 +37,7 @@ public class Queries {
 			
 	public static  void Retrieve() 
 	{		
-		String name,  stagename,  album,  award;
+		String name,  stagename,  album,  award,recordlabel;
 		try
 		{
 			
@@ -51,9 +51,10 @@ public class Queries {
 				  stagename = results.getString("StageName");
 				  album = results.getString("CurrentAlbum");
 				  award = results.getString("GreatestAward");
+				  recordlabel =results.getString("RecordLabel");
 				 
 				  JOptionPane.showMessageDialog(null,"Rapper's Name: "+ name+ "\nStage Name: "
-				 + stagename+ "\nCurrent Album: "+album+ "\nAward: "+ award);
+				 + stagename+ "\nCurrent Album: "+album+ "\nAward: "+ award+"\nRecordLabel: "+recordlabel);
 			
 			}
 			
